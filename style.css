@@ -607,3 +607,8 @@ h3 {
       margin: 3%;
       line-height: 1.5rem;
     }
+
+    .notice__step--number {
+        line-height: 2;
+      }
+    }
