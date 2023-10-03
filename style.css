@@ -513,4 +513,90 @@
       margin-top: 40px;
       margin-bottom: 40px;
     }
+   
     
+h3 {
+    margin: 0 5%;
+    font-weight: 100;
+  }
+  
+  .title__underline {
+    width: 40px;
+    height: 0.25em;
+    background-color: #99e2d0;
+    margin: 0;
+    padding: 0;
+    margin-left: 5vw;
+  }
+  
+  @media screen and (min-width: 1023px) {
+    .tuto {
+      padding: 1rem 5%;
+    }
+    .tuto ol {
+      display: flex;
+      align-items: baseline;
+      flex-direction: row;
+    }
+    .restaurant__cards {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .restaurant__card {
+      flex-basis: 45%;
+      margin: 3% 2%;
+    }
+  
+    .restaurant__card__logo i {
+      right: auto;
+    }
+  
+    .restaurant__card__logo .restaurant__card__logo--menu i {
+      right: 2rem;
+    }
+  
+    .footer {
+      display: flex;
+      flex-direction: row;
+    }
+    .footer h5 {
+      position: absolute;
+      right: 5%;
+    }
+    .footer a {
+      margin-left: 2%;
+    }
+    .menu__content {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+    .menu__content__card {
+      width: 80%;
+    margin: 1rem auto;
+    }
+  
+    .menu__content__card:hover p,
+  .menu__content__card:hover h4 {
+    max-width: 100%;
+  }
+  
+    .menu__content h3 {
+      
+        width: 80%;
+      margin: 1rem auto;
+       
+    }
+    .menu__title {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
+    }
+    
+    .title__underline {
+      margin: 1rem 10%;
+    }
+  
+    
+  }
+  

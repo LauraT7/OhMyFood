@@ -538,3 +538,113 @@ a {
         margin-bottom: 40px;
     }
 }
+
+
+h3 {
+    margin: 0 5%;
+    font-weight: 100;
+}
+
+.title__underline {
+    width: 40px;
+    height: 0.25em;
+    background-color: #99e2d0;
+    margin: 0;
+    padding: 0;
+    margin-left: 5vw;
+}
+
+@media screen and (min-width: 1023px) {
+
+    .tuto {
+        padding: 1rem 5%;
+
+        & ol {
+            display: flex;
+            align-items: baseline;
+            flex-direction: row;
+        }
+    }
+
+    .restaurant {
+        &__cards {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            flex-basis: 45%;
+            margin: 3% 2%;
+
+
+            &__content {
+                width: 80%;
+            }
+
+            &__logo {
+
+                i {
+                    right: auto;
+                }
+
+                &--menu i {
+                    right: 3rem;
+                }
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+
+        & h5 {
+            position: absolute;
+            right: 5%;
+        }
+
+        & a {
+            margin-left: 2%;
+        }
+    }
+
+    .menu {
+        &__content {
+            max-width: 90%;
+            margin: 0 auto;
+
+            h3 {
+
+                width: 80%;
+                margin: 1rem auto;
+
+            }
+
+            &__card {
+                width: 80%;
+                margin: 1rem auto;
+
+                &:hover {
+                    p {
+                        max-width: 100%;
+                    }
+
+                    h4 {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+        &__title {
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+        }
+
+    }
+
+    .title__underline {
+        margin: 1rem 10%;
+    }
