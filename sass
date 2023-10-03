@@ -230,3 +230,226 @@ a {
     }
 }
 
+.footer {
+    background-color: #353535;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+    h5 {
+        font-size: larger;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        font-family: "Shrikhand", cursive;
+        font-weight: normal;
+    }
+
+    a {
+        margin-bottom: 0.5rem;
+        margin-top: 0;
+        color: white;
+        cursor: pointer;
+    }
+
+    i {
+        margin-right: 5px;
+    }
+}
+
+
+.fa-utensils {
+    margin-right: 5px;
+}
+
+
+
+.menu {
+
+    img {
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: center;
+        box-shadow: none;
+
+        a {
+            margin-right: 40px;
+            margin-top: 1.5rem;
+            margin-left: 1rem;
+            font-size: 1.3em;
+            color: #7e7e7e;
+            position: absolute;
+            left: 1rem;
+        }
+    }
+
+    &__title {
+        border-top-left-radius: 40px 40px;
+        border-top-right-radius: 40px 40px;
+        transform: translateY(-80px);
+        margin-bottom: -80px;
+        padding: 5px 5vw;
+        background-color: #f6f6f6;
+        font-family: shrikhand, cursive;
+        font-size: large;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 0;
+        background-color: #f6f6f6;
+
+        &__dish {
+            margin-top: 2rem;
+        }
+
+        &__dessert {
+            margin-top: 2rem;
+        }
+
+        &__starter {
+            display: block;
+        }
+
+        &__card {
+            background-color: white;
+            box-shadow: 2px 2px 2px lightgrey;
+            border-radius: 20px 20px;
+            margin: 1rem;
+            display: flex;
+            transition: all 2000ms;
+            cursor: pointer;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            &:nth-child(1) {
+                animation-name: appear;
+                animation-duration: 1000ms;
+                animation-fill-mode: both;
+            }
+
+            &:nth-child(2) {
+                animation-name: appear;
+                animation-duration: 1000ms;
+                animation-fill-mode: both;
+                animation-delay: 1000ms;
+            }
+
+            &:nth-child(3) {
+                animation-name: appear;
+                animation-duration: 1000ms;
+                animation-fill-mode: both;
+                animation-delay: 2000ms;
+            }
+
+            &:nth-child(4) {
+                animation-name: appear;
+                animation-duration: 1000ms;
+                animation-fill-mode: both;
+                animation-delay: 3000ms;
+            }
+
+            &:nth-child(5) {
+                animation-name: appear;
+                animation-duration: 1000ms;
+                animation-fill-mode: both;
+                animation-delay: 4000ms;
+            }
+
+            &:nth-child(6) {
+                animation-name: appear;
+                animation-duration: 1000ms;
+                animation-fill-mode: both;
+                animation-delay: 5000ms;
+            }
+
+            &:nth-child(7) {
+                animation-name: appear;
+                animation-duration: 1000ms;
+                animation-fill-mode: both;
+                animation-delay: 6000ms;
+            }
+
+            &:nth-child(8) {
+                animation-name: appear;
+                animation-duration: 1000ms;
+                animation-fill-mode: both;
+                animation-delay: 7000ms;
+            }
+
+            &:nth-child(9) {
+                animation-name: appear;
+                animation-duration: 1000ms;
+                animation-fill-mode: both;
+                animation-delay: 8000ms;
+            }
+
+            &:hover {
+
+                p,
+                h4 {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    max-width: 200px;
+                }
+
+                .card__check {
+                    animation-name: check;
+                    animation-duration: 500ms;
+                    animation-fill-mode: both;
+                }
+            }
+
+            &:not(:hover) .card__check {
+                animation-name: check-end;
+                animation-duration: 500ms;
+                animation-fill-mode: both;
+            }
+        }
+    }
+}
+
+
+
+
+@keyframes appear {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes check {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+        margin-left: -50px;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+@keyframes check-end {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
