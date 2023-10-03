@@ -453,3 +453,88 @@ a {
         transform: translateX(0);
         opacity: 1;
     }
+
+    
+}
+
+@keyframes check {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+        margin-left: -50px;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+@keyframes check-end {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+
+.restaurant__card__logo--menu {
+    margin-left: 1rem;
+}
+
+.logo__menu {
+    box-shadow: none;
+    margin: 0;
+}
+
+.fa-check-circle {
+    margin: 30% 30%;
+    width: 30rem;
+    font-size: xx-large;
+}
+
+.card__txt {
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    padding: 10px 0 10px 5px;
+
+
+    h4 {
+        margin: 0px;
+        font-size: 1.2em;
+    }
+
+    &__description {
+        flex: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow: hidden;
+        white-space: nowrap;
+
+        p {
+            margin: 0.5rem 0.5em 0.5em 0;
+            overflow: hidden;
+
+        }
+    }
+
+    &__price {
+        font-weight: bold;
+    }
+
+    &__dish {
+        margin-top: 40px;
+    }
+
+    &__dessert {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}

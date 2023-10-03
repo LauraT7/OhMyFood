@@ -454,3 +454,63 @@
       opacity: 1;
       margin-left: 0px;
     }
+    100% {
+        transform: translateX(100px);
+        opacity: 0;
+        margin-left: -50px;
+      }
+    }
+    
+    .restaurant__card__logo--menu {
+      margin-left: 1rem;
+    }
+    
+    .logo__menu {
+      box-shadow: none;
+      margin: 0;
+    }
+    
+    .fa-check-circle {
+      margin: 30% 30%;
+      width: 30rem;
+      font-size: xx-large;
+    } 
+    
+    .card__txt {
+      display: flex;
+      flex-direction: column;
+      flex: 100%;
+      padding: 10px 0 10px 5px;
+    }
+    
+    .card__txt h4 {
+      margin: 0px;
+      font-size: 1.2em;
+    }
+    
+    .card__txt__description {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    
+    .card__txt__description p {
+      margin: 0.5rem 0.5em 0.5em 0;
+      overflow: hidden;
+    }
+    
+    .card__txt__price {
+      font-weight: bold;
+    }
+    
+    .card__txt__dish {
+      margin-top: 40px;
+    }
+    
+    .card__txt__dessert {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    
