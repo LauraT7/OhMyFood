@@ -1,0 +1,252 @@
+.fa-stack-1x, .fa-stack-2x {
+    left: auto!important;
+  }
+  
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    margin: 0%;
+    box-sizing: border;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .btn {
+    text-decoration: none;
+  }
+  
+  .logo {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 5px 5px lightgrey;
+    margin-bottom: 5px;
+    padding: 18px;
+  }
+  
+  .logo img {
+    width: 10rem;
+  }
+  
+  .searchbar {
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: #eaeaea;
+  }
+  
+  .searchbar h4 {
+    margin: 0.5rem;
+    font-weight: normal;
+  }
+  
+  .searchbar__icone {
+    margin-right: 10px;
+  }
+  
+  .intro {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap column;
+    align-items: center;
+    text-align: center;
+    background: #f6f6f6;
+    padding: 5%;
+  }
+  
+  .intro h2 {
+    margin: 1rem 2rem 0 2rem;
+  }
+  
+  .intro h4 {
+    font-weight: lighter;
+  }
+  
+  .btn {
+    background: linear-gradient(170deg, #ff79da, #9356dc);
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 5%;
+    box-shadow: 4px 4px 2px lightgrey;
+    align-self: center;
+    width: 70%;
+    height: 50px;
+    max-width: 320px;
+  }
+  
+  .btn--order {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+  }
+  
+  .btn:hover {
+    box-shadow: 5px 5px 4px lightgrey;
+    background: linear-gradient(170deg, #ff93e1, #a16be0);
+  }
+  
+  .fa-store {
+    color: #9356dc !important;
+  }
+  
+  .tuto {
+    counter-reset: steps;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+  
+  .tuto ol {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 1rem;
+  }
+  
+  .tuto li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: #f6f6f6;
+    padding: 1.5rem 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 2px 1px 8px -3px #7e7e7e;
+    max-width: 20rem;
+  }
+  
+  .tuto li::before {
+    content: counter(steps);
+    counter-increment: steps;
+    color: white;
+    background-color: #9356dc;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -1rem;
+    transform: translateY(-50%);
+  }
+  
+  .tuto li i.fas {
+    margin-right: 1rem;
+    color: #7e7e7e;
+    font-size: 1rem;
+  }
+  
+  .restaurant {
+    padding: 0 5%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background: #f6f6f6;
+  }
+  
+  .restaurant__card {
+    margin: 3vw 0px;
+    background-color: white;
+    border-radius: 20px 20px;
+    overflow: hidden;
+    width: 90vw;
+    position: relative;
+  }
+  
+  .restaurant__card__new {
+    font-weight: bold;
+    background-color: #99e2d0;
+    color: #1a8a68;
+    width: 5rem;
+    text-align: center;
+    right: 1rem;
+      position: absolute;
+      display: grid;
+      place-items: center;
+    padding: 0.5rem;
+    
+  }
+  
+  .restaurant__card img {
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .restaurant__card__content {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+  
+  .restaurant__card__txt {
+    margin-left: 20px;
+    box-sizing: border-box;
+    width: 200px;
+  }
+  
+  .restaurant__card__txt h4 {
+    margin-top: 0.6rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  .restaurant__card__txt h5 {
+    font-weight: lighter;
+    margin-top: 0px;
+  }
+  
+  .restaurant__card__logo i {
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 70px;
+    font-size: 2em;
+    transition: transform 400ms, color 400ms, background-clip 400ms;
+  }
+  
+  .restaurant__card__logo i:not(:hover) {
+    transform: scale(1);
+    color: initial;
+    background-clip: initial;
+    transition: all 400ms;
+  }
+  
+  .restaurant__card__logo i:hover {
+    transform: scale(1.1);
+    transition: all 400ms;
+    background-clip: text;
+    background-image: linear-gradient(170deg, #a16be0 30%, #ff93e1 70%);
+    font-weight: 900;
+    color: transparent;
+  }
+  
+  .footer {
+    background-color: #353535;
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer h5 {
+    font-size: larger;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-family: "Shrikhand", cursive;
+    font-weight: normal;
+  }
+  
+  .footer a {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+    color: white;
+    cursor: pointer;
+  
+  }
