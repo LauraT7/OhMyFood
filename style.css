@@ -250,9 +250,8 @@
     cursor: pointer;
   
   }
-
   
-.footer i {
+  .footer i {
     margin-right: 5px;
   }
   
@@ -455,67 +454,66 @@
       margin-left: 0px;
     }
     100% {
-        transform: translateX(100px);
-        opacity: 0;
-        margin-left: -50px;
-      }
+      transform: translateX(100px);
+      opacity: 0;
+      margin-left: -50px;
     }
-    
-    .restaurant__card__logo--menu {
-      margin-left: 1rem;
-    }
-    
-    .logo__menu {
-      box-shadow: none;
-      margin: 0;
-    }
-    
-    .fa-check-circle {
-      margin: 30% 30%;
-      width: 30rem;
-      font-size: xx-large;
-    } 
-    
-    .card__txt {
-      display: flex;
-      flex-direction: column;
-      flex: 100%;
-      padding: 10px 0 10px 5px;
-    }
-    
-    .card__txt h4 {
-      margin: 0px;
-      font-size: 1.2em;
-    }
-    
-    .card__txt__description {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-    
-    .card__txt__description p {
-      margin: 0.5rem 0.5em 0.5em 0;
-      overflow: hidden;
-    }
-    
-    .card__txt__price {
-      font-weight: bold;
-    }
-    
-    .card__txt__dish {
-      margin-top: 40px;
-    }
-    
-    .card__txt__dessert {
-      margin-top: 40px;
-      margin-bottom: 40px;
-    }
-   
-    
-h3 {
+  }
+  
+  .restaurant__card__logo--menu {
+    margin-left: 1rem;
+  }
+  
+  .logo__menu {
+    box-shadow: none;
+    margin: 0;
+  }
+  
+  .fa-check-circle {
+    margin: 30% 30%;
+    width: 30rem;
+    font-size: xx-large;
+  } 
+  
+  .card__txt {
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    padding: 10px 0 10px 5px;
+  }
+  
+  .card__txt h4 {
+    margin: 0px;
+    font-size: 1.2em;
+  }
+  
+  .card__txt__description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .card__txt__description p {
+    margin: 0.5rem 0.5em 0.5em 0;
+    overflow: hidden;
+  }
+  
+  .card__txt__price {
+    font-weight: bold;
+  }
+  
+  .card__txt__dish {
+    margin-top: 40px;
+  }
+  
+  .card__txt__dessert {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  h3 {
     margin: 0 5%;
     font-weight: 100;
   }
@@ -600,15 +598,73 @@ h3 {
     
   }
   
-
   @media screen and (min-width: 767px) {
     .notice__step {
       width: 23%;
       margin: 3%;
       line-height: 1.5rem;
     }
-
     .notice__step--number {
-        line-height: 2;
-      }
+      line-height: 2;
     }
+  }
+  
+  .loader {
+    position: fixed;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    inset: 0px;
+    background-color: grey;
+    opacity: 95%;
+    animation: disappear 500ms;
+    animation-fill-mode: forwards;
+    animation-delay: 2500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .fa-cookie {
+    animation: spin 3000ms;
+    margin: 30px;
+  }
+  
+  .first-cookie {
+    color: white;
+  }
+  
+  .second-cookie {
+    animation-delay: 500ms;
+    color: #FF79DA;
+  }
+  
+  .last-cookie {
+    animation: spin 3000ms;
+    margin: 30px;
+    animation-delay: 1000ms;
+    color: #99E2D0;
+  }
+  
+  @keyframes disappear {
+    0% {
+      transform: scale(1);
+      oppacity: 100%;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0%;
+    }
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+      margin-bottom: 40px;
+    }
+    100% {
+      transform: rotate(360deg);
+      margin-bottom: 150px;
+    }
+  }
+  
