@@ -1,0 +1,15 @@
+.searchbar {
+    display: flex;
+    justify-content: center;
+    color: black;
+    background-color: #eaeaea;
+
+    h4 {
+        margin: 0.5rem;
+        font-weight: normal;
+    }
+
+    &__icone {
+        margin-right: 10px;
+    }
+}

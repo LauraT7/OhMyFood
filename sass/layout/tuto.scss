@@ -1,0 +1,46 @@
+.tuto {
+    counter-reset: steps;
+    margin-bottom: 2rem;
+    padding: 1rem;
+
+    ol {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-left: 1rem;
+    }
+
+    li {
+        position: relative;
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        background-color: #f6f6f6;
+        padding: 1.5rem 1.5rem;
+        border-radius: 1rem;
+        box-shadow: 2px 1px 8px -3px #7e7e7e;
+        max-width: 20rem;
+
+        &::before {
+            content: counter(steps);
+            counter-increment: steps;
+            color: white;
+            background-color: #9356dc;
+            width: 2rem;
+            height: 2rem;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: -1rem;
+            transform: translateY(-50%);
+        }
+
+        i.fas {
+            margin-right: 1rem;
+            color: #7e7e7e;
+            font-size: 1rem;
+        }
+    }
+}

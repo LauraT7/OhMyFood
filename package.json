@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "sass": "^1.69.0"
+  },
+  "name": "oc-p4-omf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LauraT7/OhMyFood.git"
+  },
+  "keywords": [
+    "ohmyfood",
+    "openclassrooms",
+    "oc",
+    "omf"
+  ],
+  "author": "Laura Bellanger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LauraT7/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/LauraT7/OhMyFood#readme",
+  "description": ""
+}

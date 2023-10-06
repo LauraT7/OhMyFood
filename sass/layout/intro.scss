@@ -1,0 +1,48 @@
+.intro {
+    display: flex;
+    justify-content: center;
+    flex-flow: wrap column;
+    align-items: center;
+    text-align: center;
+    background: #f6f6f6;
+    padding: 5%;
+
+    h2 {
+        margin: 1rem 2rem 0 2rem;
+    }
+
+    h4 {
+        font-weight: lighter;
+    }
+}
+
+.btn {
+    background: linear-gradient(170deg, #ff79da, #9356dc);
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+    border-radius: 50px;
+    border: none;
+    margin-bottom: 5%;
+    box-shadow: 4px 4px 2px lightgrey;
+    align-self: center;
+    width: 70%;
+    height: 50px;
+    max-width: 320px;
+
+    &--order {
+        display: flex;
+        justify-content: center;
+        margin: 40px;
+    }
+
+    &:hover {
+        box-shadow: 5px 5px 4px lightgrey;
+        background: linear-gradient(170deg, #ff93e1, #a16be0);
+    }
+}
+
+
+.fa-store {
+    color: #9356dc !important;
+}

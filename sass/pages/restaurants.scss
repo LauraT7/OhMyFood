@@ -1,0 +1,163 @@
+.restaurant {
+    padding: 0 5%;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background: #f6f6f6;
+
+    &__card {
+        background-color: white;
+        border-radius: 20px 20px;
+        overflow: hidden;
+        width: 90vw;
+        position: relative;
+
+        &__new {
+            font-weight: bold;
+            background-color: #99e2d0;
+            color: #1a8a68;
+            width: 5rem;
+            text-align: center;
+            right: 1rem;
+            position: absolute;
+            display: grid;
+            place-items: center;
+            padding: 0.5rem;
+
+        }
+
+        img {
+            height: 150px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &__content {
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+        }
+
+        &__txt {
+            margin-left: 20px;
+            box-sizing: border-box;
+            width: 200px;
+
+            h4 {
+                margin-top: 0.6rem;
+                margin-bottom: 0.4rem;
+            }
+
+            h5 {
+                font-weight: lighter;
+                margin-top: 0px;
+            }
+        }
+
+        &__logo i {
+            right: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90px;
+            height: 70px;
+            font-size: 2em;
+            transition: transform 400ms, color 400ms, background-clip 400ms;
+            
+            &:not(:hover) {
+                transform: scale(1);
+                color: initial;
+                background-clip: initial;
+                transition: all 400ms;
+              }
+
+
+            &:hover {
+                transform: scale(1.1);
+                transition: all 400ms;
+                background-clip: text;
+                -webkit-background-clip: text;
+                background-image: linear-gradient(170deg, #a16be0 30%, #ff93e1 70%);
+                font-weight: 900;
+                color: transparent;
+            }
+        }
+    }
+}
+
+.restaurant__card__logo--menu {
+    margin-left: 1rem;
+}
+
+.logo__menu {
+    box-shadow: none;
+    margin: 0;
+}
+
+.fa-check-circle {
+    margin: 30% 30%;
+    width: 30rem;
+    font-size: xx-large;
+}
+
+.card__txt {
+    display: flex;
+    flex-direction: column;
+    flex: 100%;
+    padding: 10px 0 10px 5px;
+
+
+    h4 {
+        margin: 0px;
+        font-size: 1.2em;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow: hidden;
+        white-space: nowrap;
+
+        p {
+            margin: 0.5rem 0.5em 0.5em 0;
+            overflow: hidden;
+
+        }
+    }
+
+    &__price {
+        font-weight: bold;
+    }
+
+    &__dish {
+        margin-top: 40px;
+    }
+
+    &__dessert {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+h3 {
+    margin: 0 5%;
+    font-weight: 100;
+}
+
+.title__underline {
+    width: 40px;
+    height: 0.25em;
+    background-color: #99e2d0;
+    margin: 0;
+    padding: 0;
+    margin-left: 5vw;
+}
+
+.card__check {
+    color: #f6f6f6;
+    background-color: #99e2d0;
+    margin-left: -3rem;
+    width: 4rem;
+    opacity: 0;
+    transition: opacity 400ms;
+}
